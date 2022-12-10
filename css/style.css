@@ -1,3 +1,7 @@
-.mr-10 {
-    margin: 3px;
+.kmr-3 {
+    margin-right: 3px;
+}
+
+.kmt-10 {
+    margin-top: 10px !important;
 }
