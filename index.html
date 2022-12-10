@@ -34,6 +34,12 @@
                 lessons: []
             },
             methods: {
+            },
+            created() {
+                // GET request to fetch lessons and add response to lessons data object
+                fetch("http://localhost:3000/lessons")
+                    .then(response => response.json())
+                    .then(data => (this.lessons = data));
             }
         });
     </script>
