@@ -13,6 +13,12 @@ app.get("/lessons", (request, response, next)=>{
     response.send(lessons);
 });
 
+// get route for "/user" path that returns user details
+app.get("/user", (request, response, next)=>{
+    const user = {'email': 'user@email.com', 'password': 'mypassword'};
+    response.send(user);
+});
+
 app.listen(3000, ()=>{
     console.log("App started on 3000 ");
 });
