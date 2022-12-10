@@ -19,6 +19,9 @@ app.get("/user", (request, response, next)=>{
     response.send(user);
 });
 
+// route for "/" path that returns index.html
+app.use(express.static("./"));
+
 app.listen(3000, ()=>{
     console.log("App started on 3000 ");
 });
